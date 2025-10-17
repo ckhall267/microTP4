@@ -16,4 +16,39 @@ public class Salle {
     private List<Machine> machines;
 
     // Constructeurs, getters et setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public List<Machine> getMachines() {
+        return machines;
+    }
+
+    public void setMachines(List<Machine> machines) {
+        this.machines = machines;
+    }
+    public Salle() {
+    }
+
+    // 🔹 Constructeur utile quand tu veux créer une salle avec un code
+    public Salle(String code) {
+        this.code = code;
+    }
+
+
+
 }

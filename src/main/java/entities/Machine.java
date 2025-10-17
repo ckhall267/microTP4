@@ -20,4 +20,48 @@ public class Machine {
     private Salle salle;
 
     // Constructeurs, getters et setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getRef() {
+        return ref;
+    }
+
+    public void setRef(String ref) {
+        this.ref = ref;
+    }
+
+    public Date getDateAchat() {
+        return dateAchat;
+    }
+
+    public void setDateAchat(Date dateAchat) {
+        this.dateAchat = dateAchat;
+    }
+
+    public Salle getSalle() {
+        return salle;
+    }
+
+    public void setSalle(Salle salle) {
+        this.salle = salle;
+    }
+    public Machine() {
+        // constructeur vide obligatoire pour JPA/Hibernate
+    }
+
+    public Machine(String ref, Date dateAchat, Salle salle) {
+        this.ref = ref;
+        this.dateAchat = dateAchat;
+        this.salle = salle;
+    }
+
+
+
 }
